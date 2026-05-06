@@ -2,10 +2,23 @@
 name = "pixi-git-lfs-example-package"
 version = "0.1.0"
 description = "Example package that stores files with Git LFS"
-authors = ["Pixi Contributors <info@prefix.dev>"]
+authors = ["Silvio Traversaro <silvio.traveraro@gbionics.ai>"]
 channels = ["conda-forge"]
 platforms = ["linux-64"]
 preview = ["pixi-build"]
+
+[dependencies]
+python = ">=3.8"
+
+[feature.pypi.pypi-dependencies]
+pixi-git-lfs-example = { path = "." }
+
+[feature.pixi-build.dependencies]
+pixi-git-lfs-example-package = { path = "." }
+
+[environments]
+pypi = { features = ["pypi"] }
+pixi-build = { features = ["pixi-build"] }
 
 [package]
 name = "pixi-git-lfs-example-package"
