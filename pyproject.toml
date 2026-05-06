@@ -21,8 +21,10 @@ check-stl-is-not-git-lfs-pointer = "pixi_git_lfs_example.cli:main"
 Repository = "https://github.com/prefix-dev/pixi"
 
 [tool.setuptools]
-packages = ["pixi_git_lfs_example"]
 package-dir = {"" = "src"}
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [tool.setuptools.package-data]
-pixi_git_lfs_example = ["data/binary_cube.stl"]
+pixi_git_lfs_example.data = ["binary_cube.stl"]

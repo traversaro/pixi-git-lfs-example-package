@@ -7,13 +7,14 @@ files will be Git LFS pointers instead of actual binary files.
 """
 
 import argparse
+from importlib import resources
 import sys
 from pathlib import Path
 
 
 def default_stl_path() -> Path:
     """Return the packaged binary_cube.stl path."""
-    return Path(__file__).resolve().parent / "data" / "binary_cube.stl"
+    return Path(resources.files("pixi_git_lfs_example.data").joinpath("binary_cube.stl"))
 
 
 def is_git_lfs_pointer(file_path: Path) -> bool:
