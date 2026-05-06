@@ -1,3 +1,13 @@
+Metadata-Version: 2.4
+Name: pixi-git-lfs-example
+Version: 0.1.0
+Summary: Example package that stores files with Git LFS for Pixi issue reproduction
+Author-email: Pixi Contributors <info@prefix.dev>
+License: MIT
+Project-URL: Repository, https://github.com/prefix-dev/pixi
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
 # pixi-git-lfs-example-package
 
 A minimal Python package that demonstrates the Pixi Git LFS issue ([#2000](https://github.com/prefix-dev/pixi/issues/2000)).

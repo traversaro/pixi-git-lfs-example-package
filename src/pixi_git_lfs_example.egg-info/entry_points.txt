@@ -1,0 +1,2 @@
+[console_scripts]
+check-stl-is-not-git-lfs-pointer = pixi_git_lfs_example.cli:main

@@ -1,0 +1,25 @@
+[workspace]
+name = "pixi-git-lfs-example-package"
+version = "0.1.0"
+description = "Example package that stores files with Git LFS"
+authors = ["Pixi Contributors <info@prefix.dev>"]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+preview = ["pixi-build"]
+
+[package]
+name = "pixi-git-lfs-example-package"
+version = "0.1.0"
+
+[package.build.backend]
+name = "pixi-build-python"
+version = "0.*"
+
+[package.host-dependencies]
+python = ">=3.8"
+pip = "*"
+setuptools = ">=61"
+setuptools-scm = ">=6.4"
+
+[package.run-dependencies]
+python = ">=3.8"
