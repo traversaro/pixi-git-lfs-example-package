@@ -27,4 +27,4 @@ package-dir = {"" = "src"}
 where = ["src"]
 
 [tool.setuptools.package-data]
-pixi_git_lfs_example.data = ["binary_cube.stl"]
+"pixi_git_lfs_example.data" = ["binary_cube.stl"]
